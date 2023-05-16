@@ -3,7 +3,7 @@
 <head>
 
     <!--CSS Importados-->
-    <link rel="stylesheet" type="text/css" href="index_styles.css">
+    <link rel="stylesheet" type="text/css" href="css/index_styles.css">
     <link rel="stylesheet" href="css/jquery.dataTables.min.css">
     <link rel="stylesheet" type="text/css" href="css/select.dataTables.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">

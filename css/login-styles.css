@@ -1,0 +1,130 @@
+:root {
+    --colorTextos: rgba(255, 255, 255,0.5);
+}
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Century Gothic", sans-serif;
+}
+body{
+    background: url(../images/fondo-carpinteria.jpeg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+.capa{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    z-index: -1;
+    top: 0;left: 0;
+}
+
+h1 {
+    color: rgba(255,255,255,1);
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+form {
+    background: rgba(0,0,0,0.25);
+    width: 30%;
+    padding: 10px 0;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 0.4ch solid rgba(0,0,0,0.1);
+}
+
+.form {
+    width: 100%;
+    margin: auto;
+}
+
+form .grupo {
+    position: relative;
+    margin: 45px;
+}
+
+input, textarea {
+    background: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    color: #fff;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
+    position: absolute;
+    top: -14px;
+    font-size: 12px;
+    color: #fff;
+}
+
+label {
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.3s ease all;
+    pointer-events: none;
+}
+
+input:focus~.barra::before, textarea:focus~.barra::before {
+    width: 100%;
+}
+
+.barra {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.barra::before {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: #fff;
+    transition: 0.3s ease all;
+    left: 0;
+}
+
+button {
+    background: rgba(255, 255, 255,0.5);
+    display: block;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #fff;
+    transform: scale(1.1);
+}
+
+
+

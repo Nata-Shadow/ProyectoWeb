@@ -1,0 +1,24 @@
+*{margin: 0;padding: 0;font-family: "Century Gothic",sans-serif;}
+body{background: #6d6d6d;}
+#main{display: flex; flex-direction: column}
+#user-logged-nav{width: 100%;padding: 1%;background: #6d6d6d;}
+#users-table tr.selected{background-color: rgb(250, 250, 210);}
+#request_screen{background: #f1ebe0;/*#f1f1f1;*/padding: 10px;display: flex;flex-direction: column;align-items: center;}
+#add-button-container{width: 100%;display: flex;justify-content: center;height: fit-content;}
+#people-list {margin-bottom: 1%;}
+#table-container{width: 90%;margin: 15px;}
+.container{width: 100%;max-width: 1200px;}
+.logo{float: left;color: #fff;}
+.container .menu{float: right;}
+.container .menu a{display: inline-block;padding: 15px;line-height: normal;text-decoration: none;transition: all 0.3s ease;border-bottom: 2px solid transparent;font-size: 15px;color: #fff;}
+.container .menu a:hover{border-bottom: 2px solid #fff;padding-bottom: 5px;}
+#filtrar-mueble-form-container, #filtrar-material-form-container {display: flex; place-content: flex-start; margin-bottom: 2%;}
+#form-filtrar-muebles,#form-filtrar-material, #form-filtrar-reportes{display: flex; flex-direction: row; width: 55%;}
+#form-filtrar-muebles label,#form-filtrar-material label{text-align: center;}
+#form-filtrar-muebles #input-fecha-inicio, #form-filtrar-material #input-fecha-inicio, #form-filtrar-reportes #filtrar_mes {margin-right: 3%; margin-left: 2%; border: solid #6d6d6d 0.1mm;}
+#form-filtrar-muebles #input-fecha-final, #form-filtrar-material #input-fecha-final, #form-filtrar-reportes #filtrar_anno {margin-right: 2%; margin-left: 2%; border: solid #6d6d6d 0.1mm;}
+#form-filtrar-muebles #mostrarFiltrado, #form-filtrar-material #mostrarFiltrado, #form-filtrar-reportes #mostrarFiltrado {margin-left: 3%;}
+
+
+
+
